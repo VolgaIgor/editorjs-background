@@ -1,0 +1,36 @@
+{
+    "name": "editorjs-background",
+    "version": "1.0.0",
+    "keywords": [
+        "codex editor",
+        "color",
+        "background",
+        "tune",
+        "editor.js",
+        "editorjs"
+    ],
+    "description": "Background Block Tune for Editor.js",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VolgaIgor/editorjs-background.git"
+    },
+    "main": "./dist/bundle.js",
+    "scripts": {
+        "build": "webpack --mode production",
+        "build:dev": "webpack --mode development --watch"
+    },
+    "author": "Igor Shuvalov «VolgaIgor»",
+    "dependencies": {
+        "@codexteam/icons": "^0.3.2"
+    },
+    "devDependencies": {
+        "raw-loader": "^4.0.2",
+        "webpack": "^5.96.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "bugs": {
+        "url": "https://github.com/VolgaIgor/editorjs-background/issues"
+    },
+    "homepage": "https://github.com/VolgaIgor/editorjs-background#readme"
+}
