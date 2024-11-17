@@ -1,6 +1,6 @@
 {
     "name": "editorjs-background",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "codex editor",
         "color",
@@ -15,7 +15,7 @@
         "type": "git",
         "url": "git+https://github.com/VolgaIgor/editorjs-background.git"
     },
-    "main": "./dist/bundle.js",
+    "main": "./dist/editorjs-background.bundle.js",
     "scripts": {
         "build": "webpack --mode production",
         "build:dev": "webpack --mode development --watch"
