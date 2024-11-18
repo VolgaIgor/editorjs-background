@@ -74,6 +74,7 @@ export default class BackgroundTune {
     this._color = existColor ? color : null;
 
     if (this._wrapper) {
+      this._wrapper.className = existColor ? `cdx-background-tune cdx-background-tune--${color}` : '';
       this._wrapper.style.backgroundColor = existColor ? existColor.color : null;
     }
   }
@@ -87,7 +88,7 @@ export default class BackgroundTune {
     this.config.colors.forEach(color => {
       childrenItems.push({
         icon: color.icon,
-        title: color.title,
+        title: this.api.i18n.t(color.title),
         isActive: () => this.color === color.id,
         onActivate: () => this.color = (this.color !== color.id ? color.id : null),
         closeOnActivate: true
@@ -96,7 +97,7 @@ export default class BackgroundTune {
 
     return {
       icon: IconColor,
-      title: "Background",
+      title: this.api.i18n.t("Background"),
       children: {
         items: childrenItems
       },
